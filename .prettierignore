@@ -1,0 +1,8 @@
+# Ignore build outputs
+dist
+
+# Dependencies
+node_modules
+
+# GitHub configs
+.github
