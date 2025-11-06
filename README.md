@@ -1,13 +1,15 @@
 # 🕺 폼 구현 실습하기 (진행 과정)
 
-- 작업 기간: 11.5 ~ 11.6
 - JS 구현 진행 과정 정리
 
 ---
 
-# ⚙️ 프로젝트 기본 세팅
+<details>
+<summary><h1>⚙️ 프로젝트 기본 세팅</h1></summary>
 
 ## 0️⃣ TODO
+
+> 작업 기간: `11.5 ~ 11.6`
 
 - [x] vite 프로젝트 세팅
 - [x] Prettier 설정
@@ -15,6 +17,8 @@
 - [x] ESLint 설정
 - [x] Husky 설정
 - [x] commitlint 설정
+
+---
 
 ## 1️⃣ vite 프로젝트 설치
 
@@ -119,3 +123,47 @@ npm install --save-dev @commitlint/cli
 
 - commit-msg 파일 명령어 설정
 - commitlint.config.js 설정 추가
+
+</details>
+
+<details>
+<summary><h1>🎨 tailwind 세팅</h1></summary>
+
+## 0️⃣ TODO
+
+> 작업 기간: `11.6`
+
+- [x] prettier 설정 수정 (tailwind prettier 설정, 기본값 제거)
+- [x] tailwind 설치 및 적용
+- [x] tailwind 테마 및 font-face 등록
+
+---
+
+## 1️⃣ prettier 설정 수정 (tailwind prettier 설정, 기본값 제거)
+
+- tailwind 클래스를 권장하는 순서에 맞게 정렬해주는 플러그인 설치
+- 프리티어 설정 파일에 적용 [참고>](https://github.com/tailwindlabs/prettier-plugin-tailwindcss?tab=readme-ov-file)
+
+```bash
+npm install -D prettier-plugin-tailwindcss
+```
+
+---
+
+## 2️⃣ tailwind 설치 및 적용
+
+- [tailwind 공식문서 참고](https://tailwindcss.com/docs/installation/using-vite)
+
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
+
+---
+
+## 3️⃣ tailwind 테마 및 font-face 등록
+
+- color, typography 등록
+- woff, woff2 폰트 파일 추가
+- font-face 등록
+
+</details>
