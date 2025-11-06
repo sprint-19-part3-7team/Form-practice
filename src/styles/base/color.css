@@ -1,0 +1,13 @@
+@theme {
+  /* gray */
+  --color-gray-100: #f6f6f6;
+  --color-gray-200: #cccccc;
+  --color-gray-300: #939393;
+  --color-gray-400: #181818;
+
+  /* primary */
+  --color-primary: #9935ff;
+
+  /* error */
+  --color-error: #f74747;
+}
