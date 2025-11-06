@@ -11,7 +11,7 @@
 
 - [x] vite 프로젝트 세팅
 - [x] Prettier 설정
-- [ ] ESLint 설정
+- [x] ESLint 설정
 - [ ] Husky 설정
 - [ ] commit lint 설정
 - [x] 파일 절대 경로(alias) 설정
@@ -31,7 +31,7 @@ npm create vite@latest .
 **프리티어 패키지 설치**
 
 - `--save-exact` 옵션을 추가하면 버전이 고정됨 `ex) ^9.1 (x) 9.1(o)`
-- 프로젝트 시 같은
+- 패키지 버전을 정확하게 고정해서 팀 프로젝트에서 모든 팀원이 동일한 버전을 사용하도록 할 때 유용
 
 ```bash
 npm install --save-dev --save-exact prettier
@@ -73,3 +73,18 @@ npm install --save-dev --save-exact prettier
 ```bash
 npm i --D --save-exact eslint-config-prettier
 ```
+
+**추가 플러그인 설치**
+
+- eslint-plugin-jsx-a11y 접근성 규칙
+- eslint-plugin-import import 순서 제어 용도로 사용
+- eslint-plugin-react react 플러그인
+
+```bash
+npm i --D --save-exact eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react
+```
+
+**alias 오류 해결**
+
+- unable to load resolver "alias" 에러가 발생해서 `eslint-import-resolver-vite` 패키지 설치해서 해결함
+- [참고>](https://github.com/eslint/eslint/discussions/14667#discussioncomment-12259265)
