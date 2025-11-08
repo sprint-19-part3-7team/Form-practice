@@ -8,7 +8,7 @@ const PasswordForm = ({ password, error, onChangePassword }) => {
     placeholder:text-gray4
     outline-none
   `;
-  const borderClass = error ? "border-error" : "border-gray3";
+  const borderClass = error ? 'border-error' : 'border-gray3';
 
   return (
     <div className="flex w-full flex-col items-center">
