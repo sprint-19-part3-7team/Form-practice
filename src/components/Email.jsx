@@ -6,10 +6,18 @@ const EmailForm = ({ email, error, onChangeEmail }) => {
         value={email}
         onChange={e => onChangeEmail(e.target.value)}
         placeholder="이메일을 입력해주세요."
-        className={`w-full max-w-[720px] rounded-md border px-4 py-3 ${error ? 'border-error' : 'border-gray3'} bg-gray1 text-gray5 font-pretendard text-regular-16 font-regular placeholder:text-gray4 outline-none`}
+        className={`bg-gray1 font-pretendard font-regular-16 w-full max-w-[720px] rounded-md px-4 py-3 outline-none`}
+        style={{
+          color: 'var(--color-gray5)',
+          border: '1px solid',
+          borderColor: error ? 'var(--color-error)' : 'var(--border-gray3)',
+        }}
       />
       {error && (
-        <p className="text-error font-pretendard text-regular-16 font-regular mt-1">
+        <p
+          className="font-pretendard font-regular-16 mt-1"
+          style={{ color: 'var(--color-error)' }}
+        >
           {error}
         </p>
       )}
