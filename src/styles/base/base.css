@@ -2,3 +2,8 @@
 @import './fontFace.css';
 @import './color.css';
 @import './typography.css';
+
+body {
+  @apply font-regular-16;
+  color: var(--color-gray-400);
+}
