@@ -1,3 +1,3 @@
 import { createContext } from 'react';
 
-export const FormFieldContext = createContext({});
+export const FormFieldContext = createContext({ error: null });
