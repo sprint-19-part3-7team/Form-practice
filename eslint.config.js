@@ -47,6 +47,7 @@ export default defineConfig([
     },
     ignores: ['vite.config.js'],
     rules: {
+      'react/prop-types': 'off',
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
       'no-var': 'error',
       'no-console': 'warn',

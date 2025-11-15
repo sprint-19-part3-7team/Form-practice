@@ -1,4 +1,5 @@
 @theme {
+  --color-*: initial;
   /* gray */
   --color-gray-100: #f6f6f6;
   --color-gray-200: #cccccc;
